@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="area">Colleges in North India</div>
+    <ng-container *ngFor="let college of collegesOnView">
+      <div class="col">
+        <div class="college-image-container">
+          <div class="transperancy">
+            <div class="promoted" *ngIf="college.promoted">PROMOTED</div>
+            <div class="rating">
+              <div class="rating-rating-remarks">{{college.rating}} / 5</div>
+              <div class="rating-rating-remarks">{{college.rating_remarks}}</div>
+            </div>
+            <div class="tags-container">
+              <span class="tags">{{college.tags[0]}}</span>
+              <span class="tags">{{college.tags[1]}}</span>
+              <span class="ranking">#{{college.ranking}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="college-detail-container">
+          <div class="col-1">
+            <div class="margin-top-left">
+              <span class="college-name">{{college.college_name}}</span>
+              <span class="star-container">
+                <ng-container *ngFor="let star of [1, 2, 3, 4, 5]">
+                  <em class="star" *ngIf="college.rating >= star"><svg viewBox="0 0 19.481 19.481">
+                      <g>
+                        <path
+                          d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z" />
+                      </g>
+                    </svg></em>
+                  <em class="star" *ngIf="college.rating < star"><svg viewBox="0 0 512.001 512.001">
+                      <g>
+                        <g>
+                          <path
+                            d="M511.266,197.256c-1.764-5.431-6.458-9.388-12.108-10.209l-158.722-23.065L269.452,20.155    c-2.527-5.12-7.741-8.361-13.451-8.361c-5.709,0-10.924,3.242-13.451,8.361l-70.988,143.828L12.843,187.047    c-5.65,0.821-10.344,4.779-12.108,10.209c-1.765,5.43-0.293,11.391,3.795,15.376l114.848,111.955L92.27,482.67    c-0.965,5.627,1.349,11.315,5.968,14.67c4.618,3.355,10.74,3.798,15.797,1.142L256,423.846l141.961,74.637    c2.195,1.154,4.591,1.723,6.979,1.723c3.11,0,6.206-0.966,8.818-2.865c4.619-3.356,6.933-9.043,5.968-14.671L392.61,324.587    l114.86-111.954C511.559,208.647,513.031,202.686,511.266,197.256z M366.023,308.608c-3.536,3.446-5.15,8.412-4.314,13.278    l23.311,135.898l-122.038-64.162c-4.37-2.297-9.591-2.297-13.961,0l-122.045,64.163l23.304-135.9    c0.834-4.866-0.779-9.83-4.313-13.276l-98.731-96.244l136.445-19.829c4.886-0.71,9.108-3.778,11.294-8.205L256,60.685    l61.023,123.645c2.186,4.427,6.408,7.496,11.294,8.206l136.447,19.828L366.023,308.608z" />
+                        </g>
+                      </g>
+                    </svg></em>
+                </ng-container>
+              </span>
+            </div>
+            <div class="margin-top-left">
+              <span class="nearest1">{{college.nearest_place[0]}}</span>
+              <span class="nearest2"> | {{college.nearest_place[1]}}</span>
+            </div>
+            <div class="margin-top-left">
+              <span class="match">93% Match : </span>
+              <span class="nearest2">{{college.famous_nearest_places}}</span>
+            </div>
+            <div class="offer-container">
+              {{college.offertext}}
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="discount-price-tag">
+              <span class="original-fees">₹{{college.original_fees}}</span>
+              <div class="discount-tag">
+                <div class="circle"></div>
+                <span class="discount">{{college.discount}}</span>
+              </div>
+            </div>
+            <div class="fees-container">
+              <span class="discounted-fees">₹ {{college.discounted_fees}}</span>
+            </div>
+            <p class="fee-cycle">{{college.fees_cycle}}</p>
+            <div class="amenties-container">
+              <span class="amenties">{{college.amenties[0]}} </span>
+              <span class="dot">.</span>
+              <span class="amenties"> {{college.amenties[1]}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>

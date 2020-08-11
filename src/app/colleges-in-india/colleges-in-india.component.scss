@@ -1,0 +1,299 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 98%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 98%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 98%;
+    }
+  }
+  
+  @media (min-width: 1360px) {
+    .container {
+      width: 98%;
+    }
+  }
+  
+  .container .col p {
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .college-image-container {
+    background-image: url("../../assets/college-images/college_02.jpg");
+    height: 200px;
+    position: relative;
+    box-shadow: 0 0 19px rgba(224, 223, 223);
+  
+    .transperancy {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      border-top-left-radius: 4px;
+      .promoted {
+        width: 152px;
+        height: 33px;
+        background-color: #68a7ff;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        right: 0px;
+        top: -18px;
+      }
+    }
+  }
+  
+  .amenties-container {
+    margin-top: 7%;
+    margin-left: 8%;
+  
+    .dot {
+      font-size: 20px;
+      color: #37b396;
+    }
+  }
+  
+  .amenties {
+    color: #37b396;
+    font-size: 14px;
+  }
+  
+  .area {
+    position: relative;
+    left: 56px;
+    top: 49px;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 5%;
+    width: 80%;
+    display: inline-block;
+  }
+  
+  .col-1 {
+    width: 68%;
+  }
+  .col-2 {
+    width: 32%;
+  }
+  
+  .college-detail-container {
+    height: 120px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 4px;
+    position: relative;
+    display: flex;
+    box-shadow: 0 0 19px #e0dfdf;
+    border: 0.4px solid #444444;
+    border-bottom-right-radius: 4px;
+  
+    .nearest1 {
+      font-size: 13px;
+      color: #444444;
+    }
+    .nearest2 {
+      font-size: 13px;
+      color: #adadad;
+    }
+    .discounted-fees {
+      color: #dd1c26;
+      font-weight: bold;
+      font-size: 30px;
+      position: relative;
+      left: 23%;
+    }
+    .details-rows2 {
+      position: absolute;
+      top: 85%;
+    }
+  }
+  
+  .match {
+    font-size: 13px;
+    color: #37b396;
+  }
+  .margin-top-left {
+    margin-top: 1.5%;
+    margin-left: 2%;
+  }
+  
+  .offer-container {
+    width: 347px;
+    height: 30px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #ccf5e7;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 2.5%;
+  }
+  
+  .rating-rating-remarks {
+    text-align: center;
+    font-size: 15.5px;
+    margin-top: 5px;
+  }
+  
+  .rating {
+    width: 75px;
+    height: 53px;
+    border-radius: 3.8px;
+    color: #ffffff;
+    background-color: #f5a626;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+  }
+  
+  .tags-container {
+    position: absolute;
+    bottom: 6%;
+    color: #ffffff;
+  
+    .tags {
+      width: 135px;
+      height: 34px;
+      font-size: 11px;
+      border-radius: 16px;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 6px;
+      margin: 5px;
+    }
+  
+    .ranking {
+      position: absolute;
+      font-size: 15px;
+      left: 34%;
+      position: relative;
+    }
+  }
+  
+  .college-name {
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .original-fees {
+    text-decoration: line-through;
+    font-size: 11px;
+    position: absolute;
+    left: 21%;
+    color: #444444;
+    top: 27%;
+  }
+  
+  .discount-price-tag {
+    display: -webkit-box;
+    position: relative;
+    margin-left: 39%;
+  }
+  
+  .discounted-fees {
+    margin-left: 17%;
+  }
+  
+  .star-container {
+    left: 10%;
+    position: relative;
+    .star {
+      margin-right: 2px;
+      svg {
+        width: 10px;
+      }
+    }
+  }
+  
+  .fee-cycle {
+    margin: 0;
+    font-size: 11px;
+    margin-left: 25%;
+    color: #adadad;
+    margin-top: -4%;
+  }
+  
+  .discount-tag {
+    background-color: #dd1c26;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+    height: 18px;
+    width: 35px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    left: 51%;
+    margin-top: 4px;
+  }
+  
+  .discount {
+    position: absolute;
+    top: 12%;
+    left: 51%;
+  }
+  
+  .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+  }
+  
+  /* 2 columns (600px) */
+  
+  @media only screen and (min-width: 600px) {
+    .container .col {
+      float: left;
+      width: 50%;
+    }
+  }
+  
+  /* 3 columns (768px) */
+  
+  @media only screen and (min-width: 768px) {
+    .container .col {
+      width: 33.333%;
+    }
+  }
+  
+  /* 4 columns (992px) */
+  
+  @media only screen and (min-width: 1200px) {
+    .container .col {
+      width: 42% !important;
+      padding: 53px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .container .col {
+      width: 39%;
+      padding: 52px;
+    }
+  }
+  
